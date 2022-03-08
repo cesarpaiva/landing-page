@@ -7,17 +7,15 @@
   <title>Paula Deodato Buffet</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+  rel="stylesheet">
   <link rel="stylesheet" href="assets/css/variables.css">
   <link rel="stylesheet" href="assets/css/elements.css">
   <link rel="stylesheet" href="assets/css/classes.css">
   <link rel="stylesheet" href="assets/css/menu.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
 <body>
-
 
   <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
   <label class="close-menu-label" for="close-menu" title="close menu"></label>
@@ -31,8 +29,8 @@
         <ul onclick="getElementById('close-menu').checked = false;">
           <li><a href="#home">Inicio</a></li>
           <li><a href="#gallery">Portifolio</a></li>
-          <li><a href="#intro">Eventos</a></li>
-          <li><a href="#grid-two">Serviços</a></li>
+          <li><a href="#intro">Serviços</a></li>
+          <li><a href="#grid-two">Depoimentos</a></li>
           <li><a href="#grid-one">Quem somos</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
@@ -43,10 +41,6 @@
 
   <section id="home" class="intro main-bg section-main">
     <div class="main-content intro-content">
-      <div class="intro-img">
-        <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e" width="640" height="360" frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-      </div>
       <div class="intro-text-content">
         <h6>BUFFET ▪️ DECORAÇÃO ▪️ EVENTOS</h6>
         <p>Há mais de 15 anos no mercado!<br>Tornando sonhos em realidade.</p>
@@ -57,24 +51,57 @@
 
   <section id="gallery" class="grid-one white-bg section">
     <div class="main-content grid-one-content">
+      <div class="text-center">
+        <h2>Portifolio</h2>
+      </div>
       <div class="grid">
         <div class="gallery-img">
-          <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash" />
+          <img class="blur zoom" src="assets/img/casamento.png" />
+          <div class="content-img fade">
+            <h3>Casamentos</h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#grid-one" class="botton-img">Ver album ▶</a> 
+          </div>
         </div>
         <div class="gallery-img">
-          <img src="http://source.unsplash.com/random/360x360?r=2" alt="random image from unsplash" />
+          <img class="blur zoom" src="http://source.unsplash.com/random/360x360?random=2" alt="random image from unsplash" />
+          <div class="content-img fade">
+            <h3>15 Anos</h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#grid-one" class="botton-img">Ver album ▶</a> 
+          </div>
         </div>
         <div class="gallery-img">
-          <img src="http://source.unsplash.com/random/360x360?r=3" alt="random image from unsplash" />
+          <img class="blur zoom" src="http://source.unsplash.com/random/360x360?r=3" alt="random image from unsplash" />
+          <div class="content-img fade">
+            <h3>Album</h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#grid-one" class="botton-img">Ver album ▶</a> 
+          </div>
         </div>
         <div class="gallery-img">
-          <img src="http://source.unsplash.com/random/360x360?r=4" alt="random image from unsplash" />
+          <img class="blur zoom" src="http://source.unsplash.com/random/360x360?random=4" alt="random image from unsplash" />
+          <div class="content-img fade">
+            <h3>Album</h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#grid-one" class="botton-img">Ver album ▶</a> 
+          </div>
         </div>
         <div class="gallery-img">
-          <img src="http://source.unsplash.com/random/360x360?r=5" alt="random image from unsplash" />
+          <img class="blur zoom" src="http://source.unsplash.com/random/360x360?random=5" alt="random image from unsplash" />
+          <div class="content-img fade">
+            <h3>Album</h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#grid-one" class="botton-img">Ver album ▶</a> 
+          </div>
         </div>
         <div class="gallery-img">
-          <img src="http://source.unsplash.com/random/360x360?r=6" alt="random image from unsplash" />
+          <img class="blur zoom" src="http://source.unsplash.com/random/360x360?random=6" alt="random image from unsplash" />
+          <div class="content-img fade">
+            <h3>Album</h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#grid-one" class="botton-img">Ver album ▶</a> 
+          </div>
         </div>
       </div>
     </div>
@@ -156,25 +183,32 @@
       <div class="intro-text-content contact">
         <h5>Entre em contato conosco</h5>
         <p><br>Gostaria de mais informações sobre nossos serviços? Esperamos seu contato. Estamos aqui para ajudar.</p>
-        
+
         <p><br>
-          <img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2018/11/whatsapp-logo-png-hd-2.png?resize=696%2C713&ssl=1">
-          (21)9 4022-8122</p>
+          <img
+            src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2018/11/whatsapp-logo-png-hd-2.png?resize=696%2C713&ssl=1">
+          (21)9 4022-8122
+        </p>
         <p>
           <img src="https://portais.univasf.edu.br/reitoria/imagens/03756058d18f4250bfeac9f5074209f1.png">
-          +55(21)9 4022-8122</p>
-          
-          <p><br>Horário de atendimento: h às h, segunda à sexta.</p>
-            <h6>Atendimento através das redes sociais</h6>
-            <p><br>
-              <img src="https://images.vexels.com/media/users/3/223136/isolated/lists/984f500cf9de4519b02b354346eb72e0-m-dias-sociais-do-cone-do-facebook.png">
-              blablabla</p>
-            <p>
-              <img src="https://eixo.digital/wp-content/uploads/2018/02/%C3%ADcone-twitter.png">
-              blablabla</p>
-            <p>
-              <img src="https://jukebox.ag/static/INSTAGRAM.png">
-              blablabla</p>
+          +55(21)9 4022-8122
+        </p>
+
+        <p><br>Horário de atendimento: h às h, segunda à sexta.</p>
+        <h6>Atendimento através das redes sociais</h6>
+        <p><br>
+          <img
+            src="https://images.vexels.com/media/users/3/223136/isolated/lists/984f500cf9de4519b02b354346eb72e0-m-dias-sociais-do-cone-do-facebook.png">
+          blablabla
+        </p>
+        <p>
+          <img src="https://eixo.digital/wp-content/uploads/2018/02/%C3%ADcone-twitter.png">
+          blablabla
+        </p>
+        <p>
+          <img src="https://jukebox.ag/static/INSTAGRAM.png">
+          blablabla
+        </p>
       </div>
 
       <div class="contact-form intro-img">
