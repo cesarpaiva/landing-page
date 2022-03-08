@@ -10,7 +10,7 @@
   position: relative;
   /* top: -8rem; */
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   text-align: center;
   gap: var(--gap);
   min-height: 40vh;
