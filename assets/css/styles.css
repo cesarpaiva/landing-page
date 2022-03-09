@@ -25,6 +25,9 @@
   color: rgb(0, 0, 0);
   font-size: 2.5rem;
   border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  object-position: center;
 }
 
 .botton-img {
@@ -175,42 +178,18 @@
   transform: scale(1.1);
 }
 
-.gallery-img > content-img.slide-left {
-  transform: translateX(-100%);
-}
-.gallery-img:hover > content-img.slide-left {
-  transform: translateX(0);
-}
-
-.gallery-img > content-img.slide-right {
-  transform: translateX(100%);
-}
-.gallery-img:hover > content-img.slide-right {
-  transform: translateX(0);
-}
-
-.gallery-img > content-img.slide-up {
-  transform: translateY(-100%);
-}
-.gallery-img:hover > content-img.slide-up {
-  transform: translateX(0);
-}
-
-.gallery-img > content-img.slide-down {
-  transform: translateY(100%);
-}
-.gallery-img:hover > content-img.slide-down {
-  transform: translateY(0);
-}
-
-
-.contact-form {
-  background: rgb(209, 137, 137);
-  border-radius: 1.5rem;
-}
-
 .contact {
   text-align: left;
+  justify-content: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 1rem;
+}
+
+.grid-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
 }
 
 .contact p {
@@ -227,13 +206,18 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: var(--gap);
-  padding: 2rem;
+  padding: 1rem;
+  max-height: 100%;
+  background: rgb(209, 137, 137);
+  border-radius: 1.5rem;
+  max-width: 80%;
 }
 
 .form-grid legend {
   font-size: 2.5rem; 
   font-family: 'Montserrat', sans-serif;
   color: var(--white-color);
+  text-align: center;
 }
 
 .form-group {
@@ -369,7 +353,7 @@
     position: fixed;
     z-index: 2;
     top: 2rem;
-    right: 65rem;
+    right: 3rem;
     background: var(--primary-color);
     color: var(--white-color);
     font-size: 3rem;

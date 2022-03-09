@@ -15,6 +15,12 @@ background-attachment: fixed;
   background: var(--white-color);
   color: var(--primary-color);
 }
+
+.gray-bg {
+  background: var(--gray-color);
+  color: var(--primary-color);
+}
+
 .menu-bg {
   background: var(--transparent);
   color: var(--primary-color);
