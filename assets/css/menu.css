@@ -6,8 +6,9 @@
   right: 0;
   width: 100%;
   z-index: 1;
-  background-color: rgb(209, 131, 131);
-  border-bottom: 0.1rem solid var(--light-gray-color);
+  background-color: #f7f7f7;
+  /* background-color: var(--menu-color); */
+  border-bottom: 0.1rem solid var(--gray-color);
 }
 
 .menu-content {
@@ -15,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 1px;
 }
 
 .menu h1 {
@@ -34,20 +35,27 @@
 
 .menu ul li a {
   display: block;
-  padding: 2rem;
+  padding: 1.5rem;
   font-size: 1.8rem;
   color: var(--primary-color);
   position: relative;
-  box-shadow: 0 0 1px 0 black;
+  box-shadow: 0 0 0 1px rgba(245, 245, 245, 0.199);
   white-space: nowrap;
+  margin-right: 5px;
 }
 
 .menu ul li a:hover {
-  background: var(--secondary-color); 
+  /* background: var(--secondary-color);  */
+  /* background: #ffc19c; */
+  background: #66646460;
   transition: all 300ms ease-in-out;
+}
+.menu ul li a:active {
+  background: #ff9571;
 }
 /* 
 .menu ul li a:hover::after {
   width: 50%;
   left: 25%; 
 }*/
+
