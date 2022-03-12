@@ -120,12 +120,14 @@
   text-align: center;
 }
 
-.grid-description {
-  padding-bottom: 5rem;
-  text-align: center;
+.grid-depoimento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  /* counter-reset: grid-counter; */
 }
 
-.grid-depoimento {
+.grid-3-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
@@ -147,9 +149,19 @@
 
 .grid-service {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding-bottom: 3rem;
   gap: 10rem var(--gap);
+}
+
+.service-img { 
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 12.8rem;
+  max-height: 12.8rem;
+  overflow: hidden;
+  color: rgb(218, 22, 54);
 }
 /* .grid h3 {
   font-size: 3rem;
