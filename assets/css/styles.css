@@ -151,7 +151,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-bottom: 3rem;
-  gap: 10rem var(--gap);
+  gap: var(--gap);
 }
 
 .service-img { 
@@ -360,16 +360,16 @@
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: var(--white-color);
-  width: 5rem;
-  height: 5rem;
+  background: none;
+  width: 6.4rem;
+  height: 6.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: var(--primary-color);
-  transform: rotate(-90deg);
-  border: 0.1rem solid var(--primary-color);
+  /* color: var(--primary-color); */
+  /* transform: rotate(-90deg); */
+  /* border: 0.1rem solid var(--primary-color); */
 }
 
 @media (max-width: 1400px) {
