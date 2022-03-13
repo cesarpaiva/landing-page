@@ -402,7 +402,7 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .intro-content, .grid, .grid-gallery, .grid-depoimento, .grid-service {
+  .intro-content, .grid, .grid-gallery, .grid-depoimento, .grid-service, .grid-3-columns {
     grid-template-columns: 1fr;
   }
   
