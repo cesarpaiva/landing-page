@@ -14,6 +14,19 @@
   top: 0;
 }
 
+.contact-content {
+  position: relative;
+  /* top: -8rem; */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+  padding: 0 3rem 0 3rem;
+  min-height: 40vh;
+  top: 0;
+  width: 100%;
+  max-width: 100vh;
+}
+
 .grid-intro {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -103,10 +116,9 @@
   color:rgb(243, 241, 241);
 }
 
-.intro-text-content, .intro-img {
+.intro-text-content {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
 }
 
 .intro-text-content-secundary {
@@ -181,6 +193,7 @@
   grid-template-columns: repeat(3, 1fr);
   padding-bottom: 3rem;
   gap: var(--gap);
+  padding: 1rem;
 }
 
 .service-img { 
