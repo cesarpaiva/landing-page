@@ -68,10 +68,16 @@
   /* padding: 10rem var(--gap); */
 }
 
-.main-content1 {
+.welcome-content-grid {
   max-width: 180rem;
   margin: 0 auto;
   padding-top: 10rem;
+}
+
+.welcome-content {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem var(--gap);
 }
 
 .section {
@@ -95,3 +101,10 @@ body .full-width {
   flex: 1 1 100%;
 }
 
+clearfix::before, clearfix::after {
+  content: ' ';
+  display: table;
+}
+clearfix::after {
+  clear: both;
+}
