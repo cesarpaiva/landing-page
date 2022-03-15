@@ -115,6 +115,11 @@
   color:rgb(243, 241, 241);
 }
 
+.botton-img h6 {
+  font-family: 'League Gothic', sans-serif;
+  line-height: 1.2;
+}
+
 .intro-text-content {
   display: flex;
   flex-flow: column wrap;
@@ -192,12 +197,13 @@
 
 .grid-gallery {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
   padding: 0 3rem 5rem;
   /* counter-reset: grid-counter; */
   width: 100%;
-  max-width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 .grid-contact {
