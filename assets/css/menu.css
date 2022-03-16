@@ -15,13 +15,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .menu-content img {
   display: flex;
-  max-height: 7rem;
+  max-height: 6rem;
   justify-content: center;
   align-items: center;
 }
@@ -43,11 +43,10 @@
 .menu ul li a {
   display: block;
   padding: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   /* font-family: 'Oswald', sans-serif; */
   color: var(--primary-color);
   position: relative;
-  box-shadow: 0 0 0 1px rgba(245, 245, 245, 0.199);
   white-space: nowrap;
   margin-right: 5px;
 }
