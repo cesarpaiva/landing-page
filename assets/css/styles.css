@@ -25,15 +25,21 @@
   color: white;
 }
 
-.twitter {
-  background: #55ACEE;
+.insta {
+  background: #993399;
   color: white;
 }
+.whatsapp {
+  background: green;
+  color: white;
+}
+
 
 
 /* icones rede social */
 
 #galeria {
+
   padding-bottom: 5rem;
 }
 
