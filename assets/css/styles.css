@@ -22,7 +22,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--gap);
-  padding: 10rem 0;
+  padding: 10rem 2rem 0 2rem;
   min-height: 40vh;
   top: 0;
   width: 100%;
