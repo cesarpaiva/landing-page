@@ -1,7 +1,6 @@
 
 
 #galeria {
-
   padding-bottom: 5rem;
 }
 
@@ -186,6 +185,7 @@
   /* counter-reset: grid-counter; */
   gap: var(--gap);
 }
+
 /* 
 #welcome {
   padding-top: 15rem;
@@ -193,6 +193,11 @@
 
 .welcome-img {
   display: none;
+}
+
+.title-depoimento {
+  padding: 12rem 0 0 0;
+  line-height: 2.5rem;
 }
 
 /* .color-box-welcome {
