@@ -98,6 +98,12 @@
   min-height: 100vh;
 }
 
+.section-depoimento {
+  min-height: 80vh;
+  max-height: 180vh;
+  padding: 10rem 20%;
+}
+
 .menu-spacing {
   height: 65px;
 }
