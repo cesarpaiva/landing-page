@@ -244,8 +244,8 @@
 } */
 
 .grid-service .shadow-box-welcome:hover {
-  background-color: #FFE4CF;
-  box-shadow: 0 0 15px 0  #00000048;
+  background-color: var(--e-color);
+  box-shadow: 0 0 100px -35px  var(--b-color);
 }
 
 .grid-service .shadow-box-welcome img {
