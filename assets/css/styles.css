@@ -248,6 +248,12 @@
   box-shadow: 0 0 15px 0  #00000048;
 }
 
+.grid-service .shadow-box-welcome img {
+  width: 100%;
+  max-width: 128px;
+  max-height: 128px;
+}
+
 .service-img { 
   display: block;
   position: relative;
