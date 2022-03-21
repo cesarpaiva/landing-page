@@ -500,6 +500,9 @@
   .grid-gallery {
     grid-template-columns: 1fr 1fr;
   }
+  .intro-content, .grid, .grid-depoimento, .grid-service, .grid-3-columns, .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
 }
 
 
