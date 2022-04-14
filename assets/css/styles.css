@@ -181,7 +181,8 @@
 
 .grid-2-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
   /* counter-reset: grid-counter; */
 }
 
@@ -192,6 +193,14 @@
 
 .welcome-img {
   display: none;
+}
+
+.welcome-img-grid img {
+  display: flex; 
+  align-items: center;
+  width: 100%; 
+  max-width: 41rem; 
+  max-height: 41rem;
 }
 
 .title-depoimento {
@@ -496,6 +505,10 @@
   }
   .intro-content, .grid, .grid-depoimento, .grid-service, .grid-3-columns, .grid-2-columns {
     grid-template-columns: 1fr;
+  }
+  .welcome-img-grid {
+    display: flex; 
+    justify-content: center;
   }
 }
 
