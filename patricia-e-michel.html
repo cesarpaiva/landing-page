@@ -6,6 +6,8 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
@@ -19,7 +21,10 @@
   <aside class="gallery-back">
       <a href="/galeria.html" class="btn btn3">⋘ voltar</a>
   </aside>
-      
+  <div class="next-prev">
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
   <div class="container">
   
   <div class="mySlides">
@@ -215,18 +220,18 @@
     <div class="numbertext">40 / 40</div>
     <img src="assets/albuns/album1/40.jpg"  >
   </div>
-</div>
+
   
-  <div class="next-prev">
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-  </div>
-  <!-- <div class="middle">
-    <a href="" class="btn btn3">⋘ Albuns</a>
-  </div> -->
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
+</div>
+
+
+<!-- <div class="middle">
+  <a href="" class="btn btn3">⋘ Albuns</a>
+</div> -->
+
+<div class="caption-container">
+  <p id="caption"></p>
+</div>
 
   <div class="row">
     <div class="column">
@@ -384,6 +389,56 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+$('body').keyup(function(e){
+    const KEY_LEFT  = 37;
+    const KEY_RIGHT = 39;
+    switch(e.keyCode){
+    case KEY_LEFT  : {
+        $('.prev').click(); 
+    break;
+}
+
+    case KEY_RIGHT : {
+        $('.next').click(); 
+    break;
+        }
+    }
+});
+
+
+
+$('.ctn-food').cycle({
+
+    fx: 'scrollHorz',
+    timeout: 0,
+    prev:".prev",
+    next:".next",
+    speed: 300,
+
+    containerResize: 0,
+    slideResize: 0,
+    fit: 1,
+
+});
+
+
+$('.ctn-table').cycle({
+
+    fx: 'fade',
+    timeout: 0,
+    prev:".prev",
+    next:".next",
+    speed: 500,
+
+
+    containerResize:0,
+    slideResize: 0,
+    fit:1
+
+
+});
+
 </script>
   
 </body>
