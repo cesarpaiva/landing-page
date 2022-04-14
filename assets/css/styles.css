@@ -1,7 +1,7 @@
 
 
 #galeria {
-  padding-bottom: 5rem;
+  padding: 3rem 0;
 }
 
 .intro-content {
@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
-  gap: var(--gap);
+  /* gap: var(--gap); */
   min-height: 40vh;
   top: 0;
 }
@@ -64,17 +64,17 @@
   position: relative;
   display: block;
   color: var(--gray-color);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "montserrat";
   text-decoration: none;
   margin: 3rem 0;
   border: 0.2rem solid var(--gray-color);
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2.5rem;
   text-transform: uppercase;
   overflow: hidden;
   transition: 1s all ease;
   margin: 0 auto;
-  border-radius: 15px;
+  border-radius: 1rem;
 }
 
 .btn::before{
@@ -183,7 +183,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* counter-reset: grid-counter; */
-  gap: var(--gap);
 }
 
 /* 
@@ -207,15 +206,15 @@
 } */
 
 .grid-gallery {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
-  padding: 0 3rem 5rem;
+  padding: 0 3rem 3rem;
   /* counter-reset: grid-counter; */
   width: 100%;
   max-width: 120rem;
-  margin: 0 auto;
-  
+  margin: 0 auto;  
 }
 
 .grid-contact {
@@ -236,16 +235,16 @@
   padding-top: 1rem;
   border-radius: 15px;
   border: 2px;
-  padding: 1rem;
+  padding: 3rem 5rem 2rem;
 }
 
 /* .grid-service .shadow-box-welcome {
   box-shadow: 0 0 15px 0  #0000002a;
 } */
 
-.grid-service .shadow-box-welcome:hover {
-  background-color: var(--e-color);
-  box-shadow: 0 0 100px -35px  var(--b-color);
+.grid-service .shadow-box-welcome {
+  background-color: var(--white-color);
+  /* box-shadow: 0 0 100px -35px  var(--b-color); */
 }
 
 .grid-service .shadow-box-welcome img {
@@ -341,11 +340,6 @@
 .gallery-img:hover > img.zoom {
   transform: scale(1.1);
 }
-
-#galeria {
-  padding-top: 10rem;
-}
-
 
 .contact {
   text-align: left;
