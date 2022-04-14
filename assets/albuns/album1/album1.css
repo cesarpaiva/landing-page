@@ -31,14 +31,13 @@ img {
 
 }
 
-/* Position the image container (needed to position the left and right arrows) */
+
 .container {
   position: relative;
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
 
-/* Hide the images by default */
 .mySlides {
   position: relative;
 	margin: 0 auto;
@@ -52,12 +51,10 @@ img {
   display: grid;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
 
-/* Next & previous buttons */
 .next {
 	cursor: pointer;
   width: auto;
@@ -69,6 +66,7 @@ img {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  z-index: 1;
 }
 
 .prev {
@@ -89,24 +87,21 @@ img {
 	position: absolute;
 	display: flex;
 	justify-content: center;
+  padding-top: 15%;
 	width: 100%;
-  gap: 70%;
+  gap: 55%;
 }
 
-
-/* Position the "next button" to the right */
 .next {
 	right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 16px;
@@ -115,7 +110,6 @@ img {
   top: 0;
 }
 
-/* Container for image text */
 .caption-container {
 	display: flex;
 	justify-content: center;
@@ -142,13 +136,11 @@ img {
   clear: both;
 }
 
-/* Six columns side by side */
 .column img {
   width: 100%;
   object-fit: cover;
 }
 
-/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.4;
   object-fit: f;
@@ -213,12 +205,37 @@ img {
   transition: all 300ms ease-in-out;
 }
 
+@media (max-width: 1920px) {
+  .next-prev {
+    padding-top: 20%;
+	  width: 100%;
+    gap: 70%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .next-prev {
+    padding-top: 25%;
+    gap: 80%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .next-prev {
+    padding-top: 30%;
+    gap: 90%;
+  }
+}
+
 @media (max-width: 1200px) {
 	.row {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		width: 100%;
 	}
+  .next-prev {
+    padding-top: 35%;
+  }
 }
 
 @media (max-width: 800px) {	
@@ -227,5 +244,10 @@ img {
 	grid-template-columns: repeat(2, 1fr);
 	width: 100%;
 	}
+  .next-prev {
+    padding-top: 35%;
+    gap: 80%;
+  }
 }
+
 
