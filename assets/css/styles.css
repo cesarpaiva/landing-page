@@ -50,8 +50,8 @@
 
 .welcome {
   margin: 0 auto;
-  max-width: 80rem;
-  padding: 8rem 2rem;
+  max-width: 100%;
+  padding: 8rem 0 8rem 2rem;
 }
 
 .middle{
@@ -181,7 +181,7 @@
 .grid-2-columns {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 2rem;
+  gap: 3rem;
   /* counter-reset: grid-counter; */
 }
 
@@ -197,6 +197,7 @@
 .welcome-img-grid img {
   display: flex; 
   align-items: center;
+  margin: 0 auto;
   width: 100%; 
   max-width: 41rem; 
   max-height: 41rem;
@@ -380,6 +381,11 @@
   margin-right: 1rem;
 }
 
+.contact-form {
+  padding: 0 1rem;
+  margin: 0 0 3rem;
+}
+
 .contact-form .form-grid {
   border: none;
   display: flex;
@@ -392,6 +398,7 @@
   box-shadow: 0 0 15px 0  #00000048;
   border-radius: 1.5rem;
   max-width: 80%;
+  margin: 4rem auto;
 }
 
 .form-grid legend {
@@ -500,6 +507,7 @@
   }
   .contact-form .form-grid {
     max-width: 100%;
+    margin: 0 auto;
   }
 }
 
