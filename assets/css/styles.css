@@ -51,8 +51,7 @@
 .welcome {
   margin: 0 auto;
   max-width: 80rem;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding: 8rem 2rem;
 }
 
 .middle{
@@ -238,25 +237,19 @@
   padding-bottom: 3rem;
   gap: var(--gap);
   padding: 3rem;
+  width: 100%;
 }
 
-.grid-service div {
+.shadow-box-welcome {
+  background-color: var(--white-color);
   padding-top: 1rem;
   border-radius: 15px;
   border: 2px;
-  padding: 3rem 5rem 2rem;
+  padding: 3rem 2rem 2rem;
+  width: 100%;
 }
 
-/* .grid-service .shadow-box-welcome {
-  box-shadow: 0 0 15px 0  #0000002a;
-} */
-
-.grid-service .shadow-box-welcome {
-  background-color: var(--white-color);
-  /* box-shadow: 0 0 100px -35px  var(--b-color); */
-}
-
-.grid-service .shadow-box-welcome img {
+.shadow-box-welcome img {
   width: 100%;
   max-width: 128px;
   max-height: 128px;
@@ -515,10 +508,6 @@
 
 @media (max-width: 800px) {
   #contato {
-    min-height: 200vh;
-  }
-
-  #service {
     min-height: 200vh;
   }
 

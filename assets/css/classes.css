@@ -75,6 +75,7 @@
   max-width: 120rem;
   margin: 0 auto;
   padding: 10rem var(--gap);
+  width: 100%;
 }
 
 .main-content-gallery {
@@ -86,7 +87,8 @@
 .welcome-content-grid {
   max-width: 180rem;
   margin: 0 auto;
-  padding: 5rem;
+  padding: 5rem 0;
+  width: 100%;
 }
 
 .welcome-content {
