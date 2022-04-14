@@ -566,6 +566,25 @@
   <a class="back-to-top" href="https://api.whatsapp.com/message/TBNKKIRP25KGH1?autoload=1&app_absent=0"
     target="_blank"><img src="assets/img/whatsapp.png" alt="botao whatsapp"></a>
 
+
+  <script>
+    $('body').keyup(function (e) {
+      const KEY_LEFT = 37;
+      const KEY_RIGHT = 39;
+      switch (e.keyCode) {
+        case KEY_LEFT: {
+          $('.button:nth-child(1)').click();
+          break;
+        }
+
+        case KEY_RIGHT: {
+          $('.button:nth-child(2)').click();
+          break;
+        }
+      }
+    });
+  </script>
+
   <script type='text/javascript'
     id='disqus_count-js-extra'>var countVars = { "disqusShortname": "pauladeodatobuffet" };</script>
   <script src="assets/js/slide.js"></script>
