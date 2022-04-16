@@ -12,4 +12,15 @@
   --secondary-color: crimson;
   --transparent: rgba(238, 231, 233, 0);
   --gap: 3rem;
+  --1-font: 'Architects Daughter', cursive;
+  --2-font: 'Caveat', cursive;
+  --3-font: 'Dancing Script', cursive;
+  --4-font: 'Gloria Hallelujah', cursive;
+  --5-font: 'Grape Nuts', cursive;
+  --6-font: 'Handlee', cursive;
+  --7-font: 'Lobster', cursive;
+  --8-font: 'Montserrat', sans-serif;
+  --9-font: 'Neucha', cursive;
+  --10-font: 'Saira Condensed', sans-serif;
+  --11-font: 'Playfair Display', serif;
 }

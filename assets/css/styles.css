@@ -21,7 +21,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--gap);
-  padding: 10rem 2rem 0 2rem;
+  padding: 7rem 2rem 0 2rem;
   min-height: 40vh;
   top: 0;
   width: 100%;
@@ -64,7 +64,8 @@
   display: block;
   color: var(--gray-color);
   font-size: 1.5rem;
-  font-family: "montserrat";
+  font-family: var(--8-font);
+  font-weight: 700;
   text-decoration: none;
   margin: 3rem 0;
   border: 0.2rem solid var(--gray-color);
@@ -130,6 +131,7 @@
   flex-flow: column wrap;
   text-transform: uppercase;
   justify-content: center;
+  padding: 0.5rem 0;
 }
 
 .intro-text-content p {
@@ -204,7 +206,7 @@
 }
 
 .title-depoimento {
-  padding: 12rem 0 0 0;
+  padding: 10rem 0 0 0;
   line-height: 2.5rem;
 }
 
@@ -358,7 +360,7 @@
 .welcome-content {
   max-width: 140rem;
   margin: 0 auto;
-  padding: 10rem 1rem;
+  padding: 10rem 4rem;
 }
 
 .contact-content span a {
@@ -526,8 +528,8 @@
 
 
 @media (max-width: 800px) {
-  #contato {
-    min-height: 200vh;
+  html {
+    font-size: 55%;
   }
 
   .grid-intro {
